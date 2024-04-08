@@ -1,0 +1,324 @@
+/* Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 20px;
+    color: #000;
+  background: #000;
+}
+form label{
+    color: #fff;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+  }
+  
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Headings */
+h1,
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form */
+form {
+    margin-bottom: 20px;
+}
+
+/* Form Labels */
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Form Inputs */
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+/* FOR INPUT BOXES */
+form input {
+display:block;
+margin: auto;
+block-size:50px;
+font-size: 30px;
+border-block-color: gold;
+background-color: #000000;
+border-radius: 15px;
+font-family: 'Poppins', cursive;
+}
+textarea:focus,form input:focus{
+color: #fff;
+}
+form input,select,textarea{
+color: white;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Monoton&family=Roboto+Slab&family=Roboto:wght@100;900&display=swap');
+
+
+/* css for header  */
+.animate-charcter
+{
+ text-transform: uppercase;
+background-image: linear-gradient(
+  -225deg,
+  #231557 0%,
+  #44107a 29%,
+  #ff1361 67%,
+  #fff800 100%
+);
+background-size: auto auto;
+background-clip: border-box;
+background-size: 200% auto;
+color: #000000;
+background-clip: text;
+font-weight: bold ;
+text-fill-color: transparent;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: textclip 2s linear infinite;
+display: inline-block;
+    font-size: 100px;
+}
+
+
+@keyframes textclip {
+to {
+  background-position: 200% center;
+}
+}
+
+h2 {
+    position: relative;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 2em;
+    letter-spacing: 4px;
+    overflow: hidden;
+    background: linear-gradient(90deg, #000, #fff, #000);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    animation: animate 3s linear infinite;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  }
+  
+  @keyframes animate {
+    0% {
+      background-position: -500%;
+    }
+    100% {
+      background-position: 500%;
+    }
+  }
+  
+  form button,form button::after {
+    width: 380px;
+    height: 86px;
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(45deg, transparent 5%, #FF0000 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+  }
+  
+  form button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'AVAILABLE NOW';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF0000 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  form button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+  
+  button{
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+   button,button::after {
+    /* width: 380px; */
+    width: 500px;
+    height: 86px;
+    font-size: 36px;
+    font-family: 'Bebas Neue', cursive;
+    background: linear-gradient(45deg, transparent 5%, #FF0000 5%);
+    border: 0;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 88px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+  }
+  
+  button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+    
+    content: 'AVAILABLE NOW';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF0000 5%);
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
+  }
+  
+  button:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
+  }
+  
+  @keyframes glitch {
+    0% {
+      clip-path: var(--slice-1);
+      transform: translate(-20px, -10px);
+    }
+    10% {
+      clip-path: var(--slice-3);
+      transform: translate(10px, 10px);
+    }
+    20% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 10px);
+    }
+    30% {
+      clip-path: var(--slice-3);
+      transform: translate(0px, 5px);
+    }
+    40% {
+      clip-path: var(--slice-2);
+      transform: translate(-5px, 0px);
+    }
+    50% {
+      clip-path: var(--slice-3);
+      transform: translate(5px, 0px);
+    }
+    60% {
+      clip-path: var(--slice-4);
+      transform: translate(5px, 10px);
+    }
+    70% {
+      clip-path: var(--slice-2);
+      transform: translate(-10px, 10px);
+    }
+    80% {
+      clip-path: var(--slice-5);
+      transform: translate(20px, -10px);
+    }
+    90% {
+      clip-path: var(--slice-1);
+      transform: translate(-10px, 0px);
+    }
+    100% {
+      clip-path: var(--slice-1);
+      transform: translate(0);
+    }
+  }
+  
+  h1{
+    color: #00E6F6;
+    animation: none;
+    font-size: 50px;
+  }
